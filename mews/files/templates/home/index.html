@@ -1,9 +1,393 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>HTML!</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>GUARD THE NEWS</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom fonts for this template -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+
+        <!-- Custom styles for this template -->
+        <style type="text/css" media="screen">
+
+        /*!
+        * Start Bootstrap - Grayscale v4.0.0-alpha (http://startbootstrap.com/template-overviews/grayscale)
+        * Copyright 2013-2017 Start Bootstrap
+        * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
+        */
+        body {
+        font-family: 'Lora', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        color: white;
+        background-color: black; }
+
+        html {
+        width: 100%;
+        height: 100%; }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+        font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        margin: 0 0 35px;
+        letter-spacing: 1px;
+        text-transform: uppercase; }
+
+        p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 0 0 25px; }
+        @media (min-width: 768px) {
+            p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 0 0 35px; } }
+
+        a {
+        -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        color: #e66d20; }
+        a:hover, a:focus {
+            text-decoration: none;
+            color: #9c4d1a; }
+
+        #mainNav {
+        font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        margin-bottom: 0;
+        text-transform: uppercase;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        background-color: black; }
+        #mainNav .navbar-toggler {
+            font-size: 14px;
+            padding: 11px;
+            color: white;
+            border: 1px solid white; }
+        #mainNav .navbar-brand {
+            font-weight: 700; }
+        #mainNav a {
+            color: white; }
+        #mainNav .navbar-nav .nav-item {
+            -webkit-transition: background .3s ease-in-out;
+            -moz-transition: background .3s ease-in-out;
+            transition: background .3s ease-in-out; }
+            #mainNav .navbar-nav .nav-item:hover {
+            color: fade(white, 80%);
+            outline: none;
+            background-color: transparent; }
+            #mainNav .navbar-nav .nav-item:focus, #mainNav .navbar-nav .nav-item:active {
+            outline: none;
+            background-color: transparent; }
+        @media (min-width: 768px) {
+            #mainNav {
+            padding: 20px 0;
+            -webkit-transition: background .25s ease-in-out, padding .25s ease-in-out;
+            -moz-transition: background .25s ease-in-out, padding .25s ease-in-out;
+            transition: background .25s ease-in-out, padding .25s ease-in-out;
+            letter-spacing: 1px;
+            border-bottom: none;
+            background: transparent; }
+            #mainNav.navbar-shrink {
+                padding: 10px 0;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+                background: black; }
+            #mainNav .nav-link.active {
+                outline: none;
+                background-color: rgba(255, 255, 255, 0.3); }
+                #mainNav .nav-link.active:hover {
+                color: white; } }
+
+        .masthead {
+        display: table;
+        width: 100%;
+        height: auto;
+        padding: 100px 0;
+        text-align: center;
+        color: white;
+        background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+        background-color: black;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
+        .masthead .intro-body {
+            display: table-cell;
+            vertical-align: middle; }
+            .masthead .intro-body .brand-heading {
+            font-size: 40px; }
+            .masthead .intro-body .intro-text {
+            font-size: 18px; }
+        @media (min-width: 768px) {
+            .masthead {
+            height: 100%;
+            padding: 0; }
+            .masthead .intro-body .brand-heading {
+                font-size: 100px; }
+            .masthead .intro-body .intro-text {
+                font-size: 22px; } }
+
+        .btn-circle {
+        font-size: 26px;
+        width: 50px;
+        height: 50px;
+        margin-top: 15px;
+        padding: 7px 0;
+        -webkit-transition: background .3s ease-in-out;
+        -moz-transition: background .3s ease-in-out;
+        transition: background .3s ease-in-out;
+        color: white;
+        border: 2px solid white;
+        border-radius: 100% !important;
+        background: transparent; }
+        .btn-circle:hover, .btn-circle:focus {
+            color: white;
+            outline: none;
+            background: rgba(255, 255, 255, 0.1); }
+
+        .content-section {
+        padding-top: 100px; }
+
+        .download-section {
+        width: 100%;
+        padding: 50px 0;
+        color: white;
+        background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+        background-color: black;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
+
+        #map {
+        width: 100%;
+        height: 200px;
+        margin-top: 100px; }
+
+        @media (min-width: 767px) {
+        .content-section {
+            padding-top: 250px; }
+        .download-section {
+            padding: 100px 0; }
+        #map {
+            height: 350px;
+            margin-top: 250px; } }
+
+        .btn {
+        font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+        text-transform: uppercase;
+        border-radius: 0; }
+
+        .btn-default {
+        color: #e66d20;
+        border: 1px solid #e66d20;
+        background-color: transparent; }
+        .btn-default:hover, .btn-default:focus {
+            color: black;
+            border: 1px solid #e66d20;
+            outline: none;
+            background-color: #e66d20; }
+
+        ul.banner-social-buttons {
+        margin-top: 0; }
+        @media (max-width: 1199px) {
+            ul.banner-social-buttons {
+            margin-top: 15px; } }
+        @media (max-width: 767px) {
+            ul.banner-social-buttons li {
+            display: block;
+            margin-bottom: 20px;
+            padding: 0; }
+            ul.banner-social-buttons li:last-child {
+                margin-bottom: 0; } }
+
+        footer {
+        padding: 50px 0; }
+        footer p {
+            font-size: 14px;
+            margin: 0; }
+
+        ::-moz-selection {
+        background: #fcfcfc;
+        background: rgba(255, 255, 255, 0.2);
+        text-shadow: none; }
+
+        ::selection {
+        background: #fcfcfc;
+        background: rgba(255, 255, 255, 0.2);
+        text-shadow: none; }
+
+        img::selection {
+        background: transparent; }
+
+        img::-moz-selection {
+        background: transparent; }
+
+        body {
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2); }
+
+    </style>
+
+    <!-- Temporary navbar container fix -->
+    <style>
+        .navbar-toggler {
+            z-index: 1;
+        }
+
+        @media (max-width: 576px) {
+            nav > .container {
+                width: 100%;
+            }
+        }
+    </style>
+
 </head>
-<body>
-Look! HTML!!
+
+<body id="page-top">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar fixed-top navbar-toggleable-md navbar-light">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
+            Menu <i class="fa fa-bars"></i>
+        </button>
+        <div class="container">
+            <a class="navbar-brand" href="#page-top">GUARD THE NEWS</a>
+            <div class="collapse navbar-collapse" id="navbarExample">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#download">You're Welcome</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="masthead">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                        <h1 class="brand-heading">Guard the news</h1>
+                        <p class="intro-text">A critical component to knowledge intake.
+                            <br>Brought to you by fans of the Guard Ian Sof</p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+              <br>
+                <div class="row">
+                  <div class="col-md-8 offset-md-2">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Enter your news link here...">
+                      <span class="input-group-btn">
+                        <a class="btn btn-default" href="/results">Go!</a>
+                      </span>
+                    </div><!-- /input-group -->
+                  </div><!-- /.col-lg-6 -->
+              </div><!-- /.row -->
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 offset-md-2">
+                <h2>About Guardians of the news</h2>
+                <p>Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
+                <p>This theme features stock photos by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Maps skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
+                <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with SASS and LESS files for easy customization!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 offset-md-2">
+                    <h2>You're Welcome.</h2>
+                    <p>You are welcome for the value of this website. We are changing lives, one news search at a time. Click below for therapy if you have already been exposed to any "fake news".</p>
+                    <a href="https://media2.giphy.com/media/17Q92poP1qJwI/giphy.gif" class="btn btn-default btn-lg">Click for Assistance</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 offset-md-2">
+                <h2>Contact Start Bootstrap</h2>
+                <p> For assistance or general inquery, please feel free to reach out a paw. We've got more than enough assistants lounging around to answer your questions.  </p>
+                <ul class="list-inline banner-social-buttons">
+                    <li class="list-inline-item">
+                        <a href="https://twitter.com/emrgencykittens?lang=en" class="btn btn-default btn-lg">
+                            <i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://github.com/BlackrockDigital/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; Your Website 2017</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/tether/tether.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/grayscale.min.js"></script>
+
 </body>
+
 </html>
+
