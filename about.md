@@ -1,0 +1,3 @@
+News can be a dangerous place to dabble. Especially in the morning, before coffee. News has the power to control the lives and feeling of millions of people across the globe. Sad news is just a downer, and no one likes it.
+
+At guardians of news, we are changing the world by recreating news. Instead of bleak, depressing stories about the impending doom of the world, news readers can now transform their news experience into a cat cyber-topia. Research has shown that reading cat news has proven to lower blood pressure, increase levels of vitamin B and calcium, and generally contribute to world peace.
