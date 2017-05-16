@@ -1,4 +1,4 @@
-# Guardians-of-news
+# Guardians of News
 A website for Real. Important. News.
 
 
