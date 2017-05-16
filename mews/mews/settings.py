@@ -19,6 +19,12 @@ FILES_DIR = os.path.join(BASE_DIR, 'files')
 
 TEMPLATES_DIR = os.path.join(FILES_DIR, 'templates')
 
+STATIC_DIR = os.path.join(FILES_DIR, 'static')
+
+STATICFILES_DIRS = [STATIC_DIR,]
+
+STATIC_ROOT = os.path.join(FILES_DIR, 'assets')
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 
@@ -69,6 +75,11 @@ TEMPLATES = [
         },
     },
 ]
+
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+)
 
 WSGI_APPLICATION = 'mews.wsgi.application'
 
@@ -121,3 +132,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIR = (
+    os.path.join(FILES_DIR, 'static'),
+)
